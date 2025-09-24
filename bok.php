@@ -8,4 +8,12 @@
         if (file_exists("data.json")) {
             $data = json_decode(file_get_contents('data.json'), true);
         }
+
+
     }
+
+    $json = file_get_contents('data.json');
+    $data = json_decode($json, true);
+
+?>
+
